@@ -11,21 +11,18 @@
 <title>Document</title>
 </head>
 <body>
-  <div class="container">
-  <div class="col-lg-3">
   <form id="taskList">
-  <label>USERNAME</label>
-  <input type="text" name="username" id="username" class="form-control" />
-  <label>PASSWORD</label>
-  <input type="text" name="password" id="password" class="form-control" />
-  <label>EMAIL</label>
-  <input type="text" name="email" id="email" class="form-control" />
-  <input type="button" value="SET COOKIE" onclick="setCookie()" />
-  <input type="button" value="GET COOKIE" onclick="getCookie()" />
+  <div class="col-lg-3">
+  <input type="text" name="username" id="username" placeholder="username" class="form-control" />
+  <input type="text" name="password" id="password" placeholder="password" class="form-control" />
+  <input type="text" name="email" id="email" placeholder="EMAIL" class="form-control" />
+  <button id="btn1" onclick="setCookie()">SET COOKIE</button>
+  <button id="btn2" onclick="getCookie()">GET COOKIE</button>
 
+  </div>
+  
   </form>
-  </div>
-  </div>
+  
    
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
   <script src="app.js"></script>

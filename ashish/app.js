@@ -1,32 +1,45 @@
 // function setCookie(){
-//   var cookieString = "username=" + document.getElementById('username').value;
-//   var cookieString1 = "password=" + document.getElementById('password').value;
-
-//   document.cookie = cookieString;
-//   document.cookie = cookieString1;
+//   var uname = "USERNAME=" + document.getElementById('username').value;
+//   var pass = "PASSWORD=" + document.getElementById('password').value;
+//   var emails = "EMAIL=" + document.getElementById('email').value;
+//     document.cookie = uname;
+//     document.cookie = pass;
+//     document.cookie = emails;
 // }
 
 // function getCookie(){
 //   alert(document.cookie);
 // }
 
-function setCookie(){
-  var customObject = {};
-  customObject.user = document.getElementById('username').value;
-  customObject.pass = document.getElementById('password').value;
-  customObject.emails = document.getElementById('email').value;
-
-  var jsonString = JSON.stringify(customObject);
-  document.cookie = "cookieObject=" + jsonString;
-}
-function getCookie() 
+function setCookie()
 {
-    var nameValueArray = document.cookie.split("=");
+  var wrapperobject = {};
 
-     var customObject = JSON.parse(nameValueArray[1]);
+  wrapperobject.name = document.getElementById("username").value;
+  wrapper
+}
 
-    document.getElementById("username").value = customObject.user;
-    document.getElementById("password").value = customObject.pass;
-    document.getElementById("email").value = customObject.emails;
- }
- 
+
+// function setCookie() 
+// {
+//     var customObject = {};
+
+//     customObject.name = document.getElementById("username").value;
+//     customObject.pass = document.getElementById("password").value;
+//     customObject.emails = document.getElementById("email").value;
+
+//     var jsonString = JSON.stringify(customObject);
+
+//     document.cookie = "cookieObject=" + jsonString;
+// }
+// function getCookie()
+// {
+//     var nameValueArray = document.cookie.split("=");
+
+//     var customObject = JSON.parse(nameValueArray[1]);
+
+//     document.getElementById("username").value = customObject.name;
+//     document.getElementById("password").value = customObject.pass;
+//     document.getElementById("email").value = customObject.emails;
+// }
+
