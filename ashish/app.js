@@ -16,8 +16,13 @@ function setCookie()
   var wrapperobject = {};
 
   wrapperobject.name = document.getElementById("username").value;
-  wrapper
+  wrapperobject.pass = document.getElementById("password").value;
+  wrapperobject.emails = document.getElementById("emails").value;
+
+  var jsonString = JSON.stringify(customObject);
+  document.cookie = "Cookiesis=" + jsonString;
 }
+
 
 
 // function setCookie() 
